@@ -15,6 +15,10 @@ app.use(cors({
 
 app.use(express.json())
 
+app.get("/", (req, res) => {
+  res.send("connected")
+})
+
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 
