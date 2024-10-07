@@ -8,7 +8,7 @@ const productRoutes = require("./routes/product.routes");
 const app = express();
 
 app.use(cors({
-  origin: process.env.FRONTEND_PART_URL, 
+  Origin: process.env.FRONTEND_PART_URL, 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true, 
 }));
